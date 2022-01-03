@@ -21,6 +21,10 @@
 
 /* Element Styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -122,6 +126,12 @@ section {
     margin: .5%;
 }
 
+.card:first-of-type {
+    display: flex;
+    flex: 1 0 100%;
+    max-width: 99%;
+}
+
 .project-img {
     width: 100%;
     height: 100%;
@@ -143,12 +153,6 @@ section {
 
 /* ID specific styles */
 
-#project-1 {
-    display: flex;
-    flex: 1 0 100%;
-    max-width: 99%;
-}
-
 #links {
     display: flex;
     flex-basis: 80%;
@@ -157,6 +161,7 @@ section {
 
 /* Media Queries */
 
+/* Above 768px app has top nav, left section headings, at or below 768px all sections are stacked */
 @media screen and (min-width: 769px) {
     li {
         display: inline;
@@ -182,6 +187,7 @@ section {
     }
 }
 
+/* at or below 450px, resizes the project titles and descriptions to fit smaller screen sizes */
 @media screen and (min-width: 450px) {
     .project-title {
         position: absolute;
