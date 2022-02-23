@@ -124,6 +124,12 @@ section {
     max-width: 49%;
     position: relative;
     margin: .5%;
+    opacity: .8;
+    transition: .5s;
+}
+
+.card:hover{
+    opacity: 1;
 }
 
 .card:first-of-type {
@@ -146,9 +152,9 @@ section {
     left: 2%;
     background-color: var(--bg2-color);
     width: 15%;
-    height: 10%;
+    height: 15%;
     min-width: 100px;
-    min-height: 65px;
+    min-height: 85px;
 }
 
 /* ID specific styles */
